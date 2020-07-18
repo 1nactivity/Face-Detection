@@ -41,12 +41,8 @@ elif x == 1:
     
 
     while True:
-        #video to frame 
         
-        
-    
         ret, frame = video_capture.read()
-        
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         faces1 = faceCascade.detectMultiScale(
             gray,
@@ -57,7 +53,7 @@ elif x == 1:
         
         
 
-        #face square detection
+        #face square 
         #software view doesn't work(bug)
         for (x, y, w, h) in faces1:
             cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 255), 2)
