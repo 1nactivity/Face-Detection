@@ -1,0 +1,1 @@
+cv2, time, numpy, winsound, subprocess
